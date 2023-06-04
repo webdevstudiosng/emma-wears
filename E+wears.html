@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emma Wears</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="emmastyle.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("bq3b_S6HHdyBFPnIQ");
+   })();
+</script>
+</head>
+<body>
+    <header id="header" class="vh-100 flex">
+        <div class="container">
+            <div class="header-content">
+                <h1>I'm a <br><span class="typewrite" data-loop="yes" data-speed="100" data-delay="700" data-words='["Tailor","Web-Developer", "Content-Creator", "Artist"]' ></span></h1>
+                <h3>Emma Nanshal</h3>
+
+              <ul class="social-links">
+                <li>
+                    <a href="#header" class="flex">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#about" class="flex">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="flex">
+                        Portfolio
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="flex">
+                        Contact
+                    </a>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </header>
+
+     <!--main-content-->
+    <main>
+        <!--about-content-->
+        <section id="about" class="about py-7">
+            <div class="container">
+                <div class="about-content grid">
+                    <div class="about-left">
+                        <img src="pexels-photo-461035.jpeg" alt="">
+                    </div>
+                    <div class="about-right">
+                        <div class="title">
+                            <h2>About Me</h2>
+                            <p class="lead">this is a fashion institute whereby we give you the best outfits that is suitable for you,this is 
+                                a company with a year experience with maximum training our company is aimed at giving you qualtity wears
+                            </p>
+                            <p class="lead">
+                                you can checkout my recent works and experiences below . i consider my job as my passion more than profession
+                            </p>
+                            <a href="#work" class="btn-down">
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="work" class="vh-100 flex py-7">
+            <div class="container">
+                <div class="work-content">
+                    <div class="title">
+                        <h2>What I Do</h2>
+                    </div>
+                    <ul class="work-top grid">
+                        <li class="lead">
+                        <i class="fas fa-dot-circle"></i>
+                         I create custom made suits, jackets and coats for individual customers. I also alter and repair clothes.
+                        </li>
+
+                        <li class="lead"><i class="fas fa-dot-circle"></i>I often conduct market research to gain information about fabrics and the latest designing techniques. They also identify new markets and areas for growth. Tailors
+                             research about consumer opinions and seek inspiration to perform better.</li>
+
+                             <li class="lead"><i class="fas fa-dot-circle"></i>I often conduct market research
+                                 to gain information about fabrics and the latest designing techniques. I also 
+                                 identify new markets and areas for growth. I make research about consumer opinions and seek inspiration to perform better.</li>
+                    </ul>
+                    <a href="#portfolio" class="btn-down">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <Section id="portfolio" class="vh-100 py-7">
+            <div class="container">
+                <div class="portfolio-content">
+                    <div class="title">
+                        <h2>My Portfolio</h2>
+                        <a href="#contact" class="btn-down">
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </div>
+                    <div class="portfolio-grid grid">
+                        <div><img src="H194405da7a404d51bac6ccaec492b357V.jpg" alt=""></div>
+                        <div><img src="ankara-outfit-ideas-for-men-10.png" alt=""></div>
+                        <div><img src="Ankara-Short-Flare-Gown-3-820x1024.jpg" alt=""></div>
+                        <div><img src="2b961fb269c4bf9663350f12144a536c.jpg" alt=""></div>
+                        <div><img src="20-Best-Senator-Wears-Styles-for-Men-in-Nigeria-edit.jpg" alt=""></div>
+                        <div><img src="adekunle.jpg" alt=""></div>
+                        <div><img src="ankara_and_asoebi_styles_1___CLSJ0ijJ-dd___.jpg" alt=""></div>
+
+                    </div>
+                </div>
+            </div>
+        </Section>
+
+        <section id="contact" class="py-7">
+            <div class="container">
+                <div class="contact-content flex">
+                    <div class="contact-left">
+                        <div class="title">
+                            <h2>Contact Me</h2>
+                        </div>
+                        <p class="lead">
+                            <i class="fas fa-phone-alt"></i>
+                            +234 903 433 8188
+                        </p>
+                        <p class="lead"><i class="fas fa-envelope"></i> zanfaemmanuel@gmail.com</p>
+
+                        <form onsubmit="sendEmail(); reset(); return false;">
+                            <input type="text" id="name" class="form-control" placeholder="Your name..." required>
+                            <input type="email" id="email" class="form-control" placeholder="Your email..." required>
+                            <input type="text" id="phone" class="form-control" placeholder="Phone no" required>
+                            <textarea name="messages" id="messages" class="form-control"  cols="30" rows="10">Your Orders</textarea>
+                           <button type="submit" class="btn-submit btn" onclick="sendEmail()">Send</button>
+                        </form>
+                    </div>
+
+                    <div class="contact-right">
+                        <img src="photo-1499343245400-cddc78a01317.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer" class="py-7">
+            <div class="container">
+                <div class="footer-content">
+                    <div>
+                        <h3>EMMA NANSHAL</h3>
+                        <div><img src="98c7fa22d316ea049d14fccf39b6b7f6.png" alt=""></div>
+                    </div>
+
+                    <div>
+                        <h3>Links</h3>
+                        <ul class="flex">
+                            <li><a href="#header">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#work">Work</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                        <p class="lead">Powered by Lexxa</p>
+                        <p class="lead">Sponsored by DAMS</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+
+
+
+
+
+    <script src="typewriting-master/typewriting.js"></script>
+    <script>
+        function sendEmail(){
+            var params ={
+                name: document.getElementById("name").value ,
+                email: document.getElementById("email").value ,
+                phone: document.getElementById("phone").value ,
+                messages: document.getElementById("massages")
+            };
+            
+        const serviceID = "service_k62df8i";
+        const templateID = "template_jktf3kb"
+
+        emailjs.send(serviceID,templateID,params)
+        .then(
+            res =>{
+                document.getElementById("name").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("phone").value = "";
+                document.getElementById("messages").value = "";
+
+                console.log(res);
+                alert("successful");
+            })
+        .catch(err=>console.log(err));
+        }
+    </script>
+</body>
+</html>
