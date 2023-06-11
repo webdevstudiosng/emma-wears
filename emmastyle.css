@@ -294,6 +294,10 @@ h1, h2, h3{
         height: 100%;
         object-fit: cover;
     }
+   .social-links li a{
+          font-size: 10px;
+          width: 75px;
+   }
     .contact-left form .form-control{
         max-width: 500px;
     }
