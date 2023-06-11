@@ -37,13 +37,13 @@
                 </li>
 
                 <li>
-                    <a href="#" class="flex">
+                    <a href="#portfolio" class="flex">
                         Portfolio
                     </a>
                 </li>
 
                 <li>
-                    <a href="#" class="flex">
+                    <a href="#contact" class="flex">
                         Contact
                     </a>
                 </li>
@@ -149,7 +149,7 @@
                             <input type="text" id="name" class="form-control" placeholder="Your name..." required>
                             <input type="email" id="email" class="form-control" placeholder="Your email..." required>
                             <input type="text" id="phone" class="form-control" placeholder="Phone no" required>
-                            <textarea name="messages" id="messages" class="form-control"  cols="30" rows="10">Your Orders</textarea>
+                            <textarea name="messages" id="messages" class="form-control"  cols="30" rows="10" placeholder="your orders"></textarea>
                            <button type="submit" class="btn-submit btn" onclick="sendEmail()">Send</button>
                         </form>
                     </div>
@@ -198,7 +198,7 @@
                 name: document.getElementById("name").value ,
                 email: document.getElementById("email").value ,
                 phone: document.getElementById("phone").value ,
-                messages: document.getElementById("massages")
+                messages: document.getElementById("messages")
             };
             
         const serviceID = "service_k62df8i";
