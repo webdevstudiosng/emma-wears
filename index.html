@@ -118,12 +118,12 @@
                         </p>
                         <p class="lead"><i class="fas fa-envelope"></i> zanfaemmanuel@gmail.com</p>
 
-                        <form onsubmit="sendEmail(); reset(); return false;">
+                        <form action="https://formspree.io/f/xeqyrwve" method="POST">
                             <input type="text" id="name" class="form-control" placeholder="Your name..." required>
                             <input type="email" id="email" class="form-control" placeholder="Your email..." required>
                             <input type="text" id="phone" class="form-control" placeholder="Phone no" required>
                             <textarea name="messages" id="messages" class="form-control"  cols="30" rows="10" placeholder="your orders"></textarea>
-                           <button type="submit" class="btn-submit btn" onclick="sendEmail()">Send</button>
+                           <button type="submit" class="btn-submit btn">Send</button>
                         </form>
                     </div>
 
